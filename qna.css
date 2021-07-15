@@ -33,6 +33,11 @@ nav{
     color: red;
 }
 
+.fb-comments{
+    position:relative;
+    top:210px;
+}
+
 /*Stying for small screens*/
 @media screen and (max-width: 800px){
     nav{
