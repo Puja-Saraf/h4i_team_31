@@ -6,3 +6,5 @@ We create profiles for pets for you to conveniently browse through and take your
 
 If anyone who is interested in adoption can navigate to our page and fill out the adoption form to get started.This adoption form makes adoption process smooth and simple.
 Similarly, who is interested to donate can even donate by first filling out the donation form available on our site and become the part of this noble cause.
+
+You'll get a confirmation email after filling out the form.
