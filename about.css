@@ -1,0 +1,61 @@
+body{
+  background-color: rgb(248, 220, 168);
+  overflow-x: hidden;
+}
+
+.header{
+  width: 100%;
+  background-color: #255f3d;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 55px;
+}
+
+.heading{
+  position: relative;
+  text-align: center;
+  top: 0px;
+  font-size: 40px;
+  color: white;
+}
+
+img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.para{
+  position: relative;
+  top: 12px;
+  text-align: center;
+  font-size: 25px;
+  margin: 10%;
+  font-weight: 500;
+}
+@media screen and (max-width: 762px){
+  .heading{
+    left: 290px;
+  }
+}
+@media screen and (max-width: 499px){
+  img{
+    width: 200px;
+    height: 100px;
+  }
+  .heading{
+    font-size: 30px;
+    left: 220px;
+  }
+  .heading{
+    top: 100px;
+    left: 10px;
+    color: rgb(13, 99, 59);
+  }
+  .para{
+    font-size: 20px;
+    margin: 5%;
+    top: 90px;
+  }
+}
+

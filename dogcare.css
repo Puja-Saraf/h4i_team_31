@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #f2f5f7;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgba(162, 162, 236, 0.315);
+}
+nav{
+    height: 6rem;
+    width: 100vw;
+    background-color: rgb(43, 34, 90);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+/*Styling logo*/
+.logo{
+    padding:0.6vh 1vw;
+    text-align: center;
+}
+.logo img{
+    height: 6rem;
+    width: 13rem;
+}
+.logo span{
+    color: red;
+}
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+    color: #61DAFB;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(125, 125, 204);
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+
+/*Styling Buttons*/
+.login-button{
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+.join-button{
+    color: #131418;
+    background-color: #61DAFB;
+    border: 1.5px solid #61DAFB;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #131418;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+* {
+    box-sizing: border-box;
+ }
+ .Slide {
+    display: none;
+ }
+ img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+ }
+ .slideContainer {
+    max-width: 600px;
+    position: relative;
+    top: 140px;
+    margin: auto;
+ }
+ .cc{
+     font-size:30px;
+     color:black;
+ }
+ .d1{
+     height: 400px;
+ }
+ .d2{
+    height: 400px;
+}
+.d3{
+    height: 400px;
+}
+.H1{
+    font-size:35px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+    font-family: 'Yatra One', cursive;
+}
+.H1:hover{
+    font-size:40px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+}
+.H2{
+    font-size:35px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+    font-family: 'Yatra One', cursive;
+
+}
+.H2:hover{
+    font-size:40px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+}
+.H3{
+    font-size:35px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+    font-family: 'Yatra One', cursive;
+}
+.H3:hover{
+    font-size:40px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+}
+.H4{
+    font-size:35px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+    font-family: 'Yatra One', cursive;
+}
+.H4:hover{
+    font-size:40px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+}
+.H5{
+    font-size:35px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+    font-family: 'Yatra One', cursive;
+}
+.H5:hover{
+    font-size:40px;
+    font-weight: 800px;
+    color:rgb(125, 125, 204);
+}
+
+ .prevBtn,
+ .nextBtn {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(125, 125, 204);
+    color: rgb(50, 0, 116);
+    font-weight: bolder;
+    font-size: 18px;
+ }
+ .nextBtn {
+    right: 0;
+ }
+ .Caption {
+    color: #fbff09;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+ }
+ .Navdot {
+    cursor: pointer;
+    position: relative;
+    top: 140px;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(90, 201, 100);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+ }
+ .selected,
+ .Navdot:hover {
+    background-color: rgb(109, 30, 212);
+ }
+#page {
+  max-width: 100%;
+  margin: auto;
+}
+
+.container {
+  margin: 60px;
+  margin-bottom: 0;
+  position: relative;
+  top: 160px;
+  left:10%;
+  width:80%;
+  display: block;
+}
+
+.body {
+  position: relative;
+  padding: 10px;
+  width: 80%;
+  height: 100%;
+  background: #0a1231;
+  border-top: 5px solid rgb(109, 30, 212);
+  border-bottom: 2px solid #ccc;
+  color: white;
+  font-size: 17px;
+  line-height: 1.5;
+  box-shadow: inset 0 0 5px #333;
+  font-family: 'Uchen', serif;
+}
+
+.upArrow {
+  position: absolute;
+  top: 5px;
+  left: 80%;
+  margin-left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgb(109, 30, 212);
+}
+footer {
+    position: relative;
+    top: 200px;
+    height: 60px;
+    background-color:rgb(43, 34, 90);
+  }
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+#more5 {display: none;}
+#myBtn1{
+    color: black;
+}
+#myBtn2{
+    color:black;
+}
+#myBtn3{
+    color: black;
+}
+#myBtn4{
+    color: black;
+}
+#myBtn5{
+    color: black;
+}
+
+ @media only screen and (max-width: 800px) {
+    .prevBtn,
+    .nextBtn,
+    .Caption {
+       font-size: 16px;
+    }
+    .d1{
+        height: 250px;
+    }
+    .d2{
+       height: 250px;
+   }
+   .d3{
+       height: 250px;
+   }
+   .container {
+    
+    left:5%;
+    
+  }
+ }

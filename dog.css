@@ -1,0 +1,63 @@
+body{
+    overflow-x: hidden;
+    background-color: #64c58d60;
+}
+.top{
+    position: absolute;
+    background-color: #255f3d;
+    width: 100%;
+    padding: 55px;
+    top: 0px;
+    left: 0px;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+img{
+    position: absolute;
+    top: 140px;
+    left: 120px;
+}
+.info{
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    font-family: 'Mate SC', serif;
+}
+p{
+    font-size: 28px;
+}
+@media screen and (max-width: 1085px){
+    .info{
+        left: 550px;
+    }
+}
+@media screen and (max-width: 951px){
+    .info{
+        left: 250px;
+        top: 550px;
+    }
+}
+@media screen and (max-width: 549px){
+    .info{
+        left: 100px;
+    }
+    .img{
+        left: 40px;
+    }
+}
+@media screen and (max-width: 412px){
+    .img{
+        left: 20px;
+    }
+}
+@media screen and (max-width: 383px){
+    .info{
+        left: 50px;
+    }
+    .img{
+        left: 5px;
+    }
+}
